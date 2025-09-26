@@ -1,0 +1,52 @@
+
+:root{
+  --blue:#0b3b5a;
+  --light:#82ccdd;
+  --gray:#f4f6f8;
+  --muted:#6b7280;
+  --accent:#9bdc6a;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, Arial, sans-serif;color:#222;margin:0;background:var(--gray);line-height:1.5}
+.container{width:90%;max-width:var(--container);margin:0 auto}
+.site-header{background:#fff;border-bottom:1px solid #e6eef3;position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:84px;height:84px;object-fit:contain}
+.brand-text h1{font-size:20px;margin:0;color:var(--blue);letter-spacing:1px}
+.brand-text .tagline{font-size:12px;color:var(--muted);margin-top:2px}
+.main-nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:14px}
+.hero{background:linear-gradient(180deg, #eaf9fd, #d6f0f8);padding:64px 0;text-align:center;border-bottom:1px solid #e1f0f6}
+.hero-inner h2{font-size:32px;color:var(--blue);margin-bottom:10px}
+.lead{color:var(--muted);font-size:18px;max-width:900px;margin:0 auto}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;margin-top:18px}
+section{padding:56px 0;background:transparent}
+.about p{color:var(--muted);font-size:16px}
+.advantages .cards{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px}
+.card{background:#fff;padding:18px;border-radius:10px;flex:1;min-width:240px;box-shadow:0 6px 18px rgba(11,59,90,0.06)}
+.card h3{color:var(--blue);margin-bottom:8px}
+.team-row{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.photo img{width:200px;height:240px;object-fit:cover;border-radius:6px;border:1px solid #e6eef3}
+.bio h3{margin-top:0;color:var(--blue)}
+.bio ul{margin-left:18px;color:var(--muted)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.proj{background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(11,59,90,0.05)}
+.proj img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.service-card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(11,59,90,0.05)}
+.price{font-size:18px;color:var(--blue)}
+.reviews .review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.review.empty{background:#fff;padding:18px;border-radius:8px;text-align:center;color:var(--muted)}
+.contact a{color:var(--blue)}
+.contact form{background:#fff;padding:18px;border-radius:8px;max-width:720px}
+.contact label{display:block;margin-bottom:10px;color:var(--muted)}
+.contact input,.contact textarea{width:100%;padding:10px;border:1px solid #e6eef3;border-radius:6px;margin-top:6px}
+.small{font-size:12px;color:#98a0a6;margin-top:8px}
+.site-footer{background:#0b3b5a;color:#fff;padding:20px 0;margin-top:24px}
+.site-footer p{margin:6px 0;color:#c9d9e6}
+@media(max-width:800px){
+  .header-inner{padding:12px 0}
+  .brand-text h1{font-size:16px}
+  .hero-inner h2{font-size:24px}
+  .photo img{width:160px;height:180px}
+}
